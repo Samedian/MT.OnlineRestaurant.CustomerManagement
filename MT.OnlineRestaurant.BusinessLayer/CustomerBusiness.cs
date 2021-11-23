@@ -121,7 +121,7 @@ namespace MT.OnlineRestaurant.BusinessLayer
                 userDetails.Password = passwordHash.ToString();
             }
 
-            _cacheManager.InValidateCache(CustomerCacheKey);
+            //_cacheManager.InValidateCache(CustomerCacheKey);
 
             return _customerRepository.UpdateCustomerDetails(userDetails);
 
